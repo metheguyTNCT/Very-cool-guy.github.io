@@ -72,6 +72,16 @@ body {
   transition: none;
 }
 
+#barrelroll {
+    background-color: #bb5994;
+    border: groove;
+    color: white;
+    padding: 15px 32px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .dropdowner {
   padding: 2px;
   width: 50%;
