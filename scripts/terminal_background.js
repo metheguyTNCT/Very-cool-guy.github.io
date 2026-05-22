@@ -17,10 +17,11 @@ function draw() {
     ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    ctx.fillStyle = "#0F0";
     ctx.font = fontSize + "px monospace";
 
     for (let i = 0; i < drops.length; i++) {
+        const hue = (i / columns) * 360;
+        ctx.fillStyle = `hsl(${hue}, 100%, 50%)`;
         const text = characters.charAt(Math.floor(Math.random() * characters.length));
         ctx.fillText(text, i * fontSize, drops[i] * fontSize);
 
