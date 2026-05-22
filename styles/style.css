@@ -1,95 +1,97 @@
 /* The following css creates the beautiful lesbian flag */
 
-html, body {
-    margin: 5;
-    width: 100%;
-    min-height: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
-    font-family: sans-serif;
+html,
+body {
+  margin: 5;
+  width: 100%;
+  min-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: sans-serif;
 }
 
 header {
-    padding: 2vh 0;
-    border-radius: .75vh;
-    background: linear-gradient(90deg,
-    #E40303,
-    #FF8C00,
-    #FFED00,
+  padding: 2vh 0;
+  border-radius: 0.75vh;
+  background: linear-gradient(
+    90deg,
+    #e40303,
+    #ff8c00,
+    #ffed00,
     #008026,
-    #004CFF,
+    #004cff,
     #732982,
-    #E40303,
-    #FF8C00,
-    #FFED00,
+    #e40303,
+    #ff8c00,
+    #ffed00,
     #008026,
-    #004CFF,
+    #004cff,
     #732982,
-    #E40303);
-    background-size: 200%, 100%;
-    animation:  moveGradient 5s linear infinite;
-
+    #e40303
+  );
+  background-size: 200%, 100%;
+  animation: moveGradient 5s linear infinite;
 }
 
-
 @keyframes moveGradient {
-    from {
-        background-position: 0% 0%;
-    }
-    to {
-        background-position: 100% 0%;
-    }
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 100% 0%;
+  }
 }
 
 header a {
-    color: white;
-    mix-blend-mode: difference;
-    margin: 1%;
-    cursor: pointer;
+  color: white;
+  mix-blend-mode: difference;
+  margin: 1%;
+  cursor: pointer;
 }
-
 
 /* Animated lesbian flag */
 body {
-    background: linear-gradient(
-        180deg,
-        #D52D00 0%,
-        #EF7627 14.28%,
-        #FF9A56 28.56%,
-        #FFFFFF 42.84%,
-        #D162A4 57.12%,
-        #B55690 71.40%,
-        #A30262 100%
-    );
+  background: linear-gradient(
+    180deg,
+    #d52d00 0%,
+    #ef7627 14.28%,
+    #ff9a56 28.56%,
+    #ffffff 42.84%,
+    #d162a4 57.12%,
+    #b55690 71.4%,
+    #a30262 100%
+  );
 
-    background-size: 200% 200%;
-    animation: prideWave 12s ease-in-out infinite;
-    transition: transform 1s;
+  background-size: 200% 200%;
+  animation: prideWave 12s ease-in-out infinite;
+  transition: transform 1s;
 }
 
-.barrelroll:active{
-    transform: rotate(1turn);
-    transition: none;
+.barrelroll:active {
+  transform: rotate(1turn);
+  transition: none;
 }
 
 .dropdowner {
-    padding: 2px;
-    width: 50%;
-    border: 4px solid #A30262;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-indent: 20px;
+  padding: 2px;
+  width: 50%;
+  border: 4px solid #a30262;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  text-indent: 20px;
 }
 
 @keyframes prideWave {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .image-container img {
@@ -97,7 +99,7 @@ body {
   height: auto;
 }
 
-#leon_be_like{
+#leon_be_like {
   background-color: #bb5994;
   border: groove;
   color: rgb(255, 255, 255);
@@ -111,98 +113,22 @@ body {
 }
 
 @keyframes spin3d {
-        0%   { transform: perspective(600px) rotateY(0deg); }
-        100% { transform: perspective(600px) rotateY(360deg); }
-      }
+  0% {
+    transform: perspective(600px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(600px) rotateY(360deg);
+  }
+}
 .kirky-img {
-    position: relative;
-    display: inline-block;
-    width: 8rem;
-    height: 8rem;
+  position: relative;
+  display: inline-block;
+  width: 8rem;
+  height: 8rem;
 }
 
 #kirky-container {
-    height: 45rem;
-    width: 45rem;
-    padding: 2rem;
-}
-
-#soundboard {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 10px;
-
-    width: 90%;
-    max-width: 1000px;
-
-    margin: 30px auto;
-    padding: 15px;
-
-    background: rgba(0,0,0,0.85);
-
-    border: 3px solid white;
-    border-radius: 10px;
-}
-
-#soundboard button {
-    height: 80px;
-
-    background: #222;
-    color: white;
-
-    border: 2px solid white;
-
-    font-size: 16px;
-    font-weight: bold;
-
-    cursor: pointer;
-
-    transition: 0.15s;
-}
-
-#soundboard button:hover {
-    background: #444;
-    transform: scale(1.03);
-}
-
-#soundboard button:active {
-    transform: scale(0.95);
-}
-
-#clear-clicks {
-    /* position: fixed; */
-    /* bottom: 20px; */
-    /* right: 20px; */
-
-    background: linear-gradient(135deg, #ff4da6, #a64dff);
-    color: white;
-
-    margin : 10px;
-
-    border: 3px solid white;
-    border-radius: 14px;
-
-    padding: 14px 20px;
-
-    font-size: 18px;
-    font-weight: bold;
-
-    cursor: pointer;
-
-    box-shadow: 0 0 15px rgba(255,255,255,0.4);
-
-    z-index: 9999;
-
-    transition: all 0.2s ease;
-}
-
-#clear-clicks:hover {
-    transform: scale(1.08) rotate(-2deg);
-
-    box-shadow: 0 0 25px rgba(255,255,255,0.8);
-}
-
-#clear-clicks:active {
-    transform: scale(0.95);
+  height: 45rem;
+  width: 45rem;
+  padding: 2rem;
 }

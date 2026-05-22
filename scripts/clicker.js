@@ -46,6 +46,20 @@ function startUp() {
     }
 }
 
+<!-- Clear Clicker -->
+function clearClicks() {
+    localStorage.removeItem("clicks");
+    localStorage.removeItem("clicks_at");
+
+    // remove all visible click counters
+    document.querySelectorAll("span").forEach((el) => {
+        if (el.innerHTML.includes("(ノω<。)ノ))☆.。")) {
+            el.remove();
+        }
+    });
+location.reload();
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     startUp();
 })

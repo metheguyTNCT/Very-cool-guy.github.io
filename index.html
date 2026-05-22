@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/chat.css">
 	  <link rel="icon" type="image/png" href="resources/icon.png"/>
     <link rel="manifest" href="scripts/manifest.json">
+    <link rel="stylesheet" href="styles/soundboard.css">
     <script src="script.js"></script>
     <script src="https://cdn.babylonjs.com/babylon.js"></script>
     <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.js"></script>
@@ -379,44 +380,6 @@
       </div>
     <script src="scripts/bottom.js"></script>
 
-
-    <!-- For the Soundboard -->
-    <script>
-    function playSound(id) {
-
-      // stop all sounds first
-      const sounds = document.querySelectorAll("audio");
-
-      sounds.forEach(sound => {
-        sound.pause();
-        sound.currentTime = 0;
-      });
-
-      // play selected sound
-      const audio = document.getElementById(id);
-      audio.play();
-    }
-    </script>
-    <!-- Clear Clicker -->
-    <script>
-    function clearClicks() {
-
-
-        localStorage.removeItem("clicks");
-        localStorage.removeItem("clicks_at");
-
-        // remove all visible click counters
-        document.querySelectorAll("span").forEach((el) => {
-
-            if (el.innerHTML.includes("(ノω<。)ノ))☆.。")) {
-                el.remove();
-            }
-
-        });
-    location.reload();
-    }
-    </script>
-	  
 	<p>ancient mesopotamian brainrot</p>
 	<video width="900" height="600" controls>
 		<source src="resources/ancient-brainrot.mp4" type="video/mp4">
@@ -453,5 +416,6 @@
   <img src="resources/polish-patriots-check-post-sprawdzony-przez-polskich-patriotów.png" alt=":3">
 	<div><img width="200px"src="resources/iseeyou.png"></div>
   <a href="secret.html">?</a>
+    <script src="scripts/soundboard.js"></script>
   </body>
 </html>
